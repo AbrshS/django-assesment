@@ -17,7 +17,6 @@ class UserRoleView(APIView):
         """
         Retrieve the role information of the authenticated user.
         """
-        user = request.user
+        user = request.user  # Use request.user to get the logged-in user
         serializer = UserSerializer(user)
         return Response(serializer.data, status=status.HTTP_200_OK)
-

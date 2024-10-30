@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 # football_api/settings.py
+
 AUTH_USER_MODEL = 'core.CustomUser'
 
 
@@ -49,6 +50,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',  # For Google sign-up
     'allauth.socialaccount.providers.facebook',
+    'rest_framework.authtoken'
 ]
 
 AUTHENTICATION_BACKENDS = [
